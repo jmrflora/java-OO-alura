@@ -1,9 +1,14 @@
 public class Conta {
-   double saldo;
+   private double saldo;
    int agencia;
    int numero;
    Cliente titular;
 
+   //getters and setters
+   public double getSaldo() {
+      return saldo;
+   }
+   //métodos
    void deposita(double valor){
       this.saldo = this.saldo + valor;
    }
